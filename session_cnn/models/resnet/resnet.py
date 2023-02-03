@@ -39,8 +39,8 @@ class Resnet34(keras.Model):
         ):
         super().__init__(**kwargs)
         self.low_conv = [
-            keras.layers.Conv2D(64, 7, strides=2, padding="same", use_bias=False,
-                                input_shape=input_shape),
+            DefaultConv2D(64, 7, strides=2, padding="same", use_bias=False,
+                          input_shape=input_shape),
             keras.layers.BatchNormalization(),
             keras.layers.Activation("relu"),
             keras.layers.MaxPool2D(pool_size=3, strides=2, padding="same")
