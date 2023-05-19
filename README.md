@@ -17,5 +17,6 @@ session_03                # ANN (e.g., MLP
 session_04                # time-series data and RNN 
 session_cnn               # CNN (e.g., Resnet-34,...)
 session_attention         # hierarchical attention networks (i.e. GRU + attention mechanism)
+session_pgm               # VAE & GMM
 ```
 ---
